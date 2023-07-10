@@ -1,5 +1,5 @@
 from django.db import models
-from .tests import testModels
+from .tests import TestModels
 
 # Create your models here.
 
@@ -12,7 +12,9 @@ class Expense(models.Model):
     category= models.CharField(max_length=200)
     date_created= models.DateTimeField(auto_now_add=True)
     date_updated= models.DateTimeField(auto_now=True)
+
     
+
 
 
 
